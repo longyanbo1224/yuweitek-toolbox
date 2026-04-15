@@ -1,6 +1,6 @@
 {
     "version": "1.2.0",
-    "min_required": "1.1.9",
-    "download_url": "https://asmr666.lanzouu.com/b0koxby4h",
-    "changelog": "⚠️重要！下载链接密码: 【ew9c】\n1. 读取锁文件中的 PID 并强制结束对应进程，删除锁文件。"
+    "min_required": "1.2.0",
+    "download_url": "https://gh.llkk.cc/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/V1.2.0/YUWEITEK.Agent_1.2.0_Setup.exe",
+    "changelog": "1. 新增视频转换工具：H264转MP4工具。\n2. 又写了一些不知道的bug"
 }
