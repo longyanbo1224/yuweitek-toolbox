@@ -2,5 +2,5 @@
     "version": "1.2.0",
     "min_required": "1.2.0",
     "download_url": "https://gh.llkk.cc/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/V1.2.0/YUWEITEK.Agent_1.2.0_Setup.exe",
-    "changelog": "1. 新增视频转换工具：H264转MP4工具。\n2. 又写了一些不知道的bug"
+    "changelog": "1. 新增视频转换工具：H264转MP4工具。\n2. 在线更新逻辑优化。\n3. 又写了一些不知道的bug。"
 }
