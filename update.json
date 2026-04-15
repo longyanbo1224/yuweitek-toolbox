@@ -1,6 +1,6 @@
 {
-    "version": "1.2.1",
-    "min_required": "1.2.0",
-    "download_url": "https://gh.927223.xyz/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.1/YUWEITEK.Agent_1.2.1_Setup.exe",
-    "changelog": "1. 将原本依赖浏览器访问的功能重构为桌面应用程序，减少了浏览器环境依赖与页面切换步骤，启动更快、使用更便捷。"
+    "version": "1.2.2",
+    "min_required": "1.2.1",
+    "download_url": "https://gh.927223.xyz/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.2/YUWEITEK.Agent_1.2.2_Setup.exe",
+    "changelog": "1. 优化了项目结构。2. 支持查看授权到期时间。"
 }
