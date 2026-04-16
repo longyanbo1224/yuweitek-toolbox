@@ -1,0 +1,22 @@
+name: Purge jsDelivr Cache
+
+on:
+  # 定时触发：每6小时执行一次（可调整）
+  schedule:
+    - cron: '0 */6 * * *'
+  # 手动触发：允许在 Actions 页面手动运行
+  workflow_dispatch:
+  # 可选：当 update.json 被推送到 main 分支时自动触发（实时刷新）
+  push:
+    branches:
+      - main
+    paths:
+      - 'update.json'
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge jsDelivr cache
+        run: |
+          curl -X PURGE https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json
