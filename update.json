@@ -2,5 +2,5 @@
     "version": "1.2.3",
     "min_required": "1.2.2",
     "download_url": "https://gh.927223.xyz/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.3/YUWEITEK.Agent_1.2.3_Setup.exe",
-    "changelog": "1. 维护了前后端项目结构。\n2. 支持查看授权到期时间。\n3. 调整前端样式结构。\n4. 优化检查更新效率。\n5. 可能增加了一些莫名其妙的bug。"
+    "changelog": "1. 维护了前后端项目结构。\n2. 支持查看授权到期时间。\n3. 调整前端样式结构。\n4. 优化检查更新效率。\n5. 可能增加了一些我还不知道的莫名其妙的bug。"
 }
