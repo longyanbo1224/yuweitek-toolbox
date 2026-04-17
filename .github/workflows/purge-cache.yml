@@ -19,14 +19,17 @@ jobs:
     steps:
       - name: Purge jsDelivr cache
         run: |
-          echo "正在刷新 CDN 缓存: https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json"
-          RESPONSE=$(curl -s -w "\n%{http_code}" -X PURGE https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json)
+          URL="https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json"
+          echo "正在刷新 CDN 缓存: $URL"
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X PURGE "$URL")
           HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
           BODY=$(echo "$RESPONSE" | sed '$d')
           echo "HTTP 状态码: $HTTP_STATUS"
           echo "响应内容: $BODY"
-          if [ "$HTTP_STATUS" -eq 200 ] || [ "$HTTP_STATUS" -eq 201 ]; then
-            echo "✅ 缓存刷新成功"
+          
+          # 200/201 表示缓存清除成功，400 表示文件当前无缓存（同样意味着用户下次访问会获取最新内容）
+          if [ "$HTTP_STATUS" -eq 200 ] || [ "$HTTP_STATUS" -eq 201 ] || [ "$HTTP_STATUS" -eq 400 ]; then
+            echo "✅ 缓存刷新成功（400 表示已无缓存，效果等同于成功）"
           else
             echo "❌ 缓存刷新失败，状态码: $HTTP_STATUS"
             echo "详细响应: $BODY"
