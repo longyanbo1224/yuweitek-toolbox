@@ -1,9 +1,12 @@
 name: Purge jsDelivr Cache
 
 on:
+  # 定时触发：每6小时执行一次
   schedule:
     - cron: '0 */6 * * *'
+  # 手动触发：允许在 Actions 页面手动运行
   workflow_dispatch:
+  # 当 update.json 被推送到 main 分支时自动触发
   push:
     branches:
       - main
@@ -14,34 +17,18 @@ jobs:
   purge:
     runs-on: ubuntu-latest
     steps:
-      - name: Purge jsDelivr cache for main branch
+      - name: Purge jsDelivr cache
         run: |
-          PURGE_URL="https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json"
-          echo "正在刷新 CDN 缓存: $PURGE_URL"
-          RESPONSE=$(curl -s -w "\n%{http_code}" -X PURGE "$PURGE_URL")
+          echo "正在刷新 CDN 缓存: https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json"
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X PURGE https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json)
           HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
           BODY=$(echo "$RESPONSE" | sed '$d')
           echo "HTTP 状态码: $HTTP_STATUS"
           echo "响应内容: $BODY"
           if [ "$HTTP_STATUS" -eq 200 ] || [ "$HTTP_STATUS" -eq 201 ]; then
-            echo "✅ 缓存刷新请求已接受"
+            echo "✅ 缓存刷新成功"
           else
-            echo "❌ 缓存刷新请求失败，状态码: $HTTP_STATUS"
+            echo "❌ 缓存刷新失败，状态码: $HTTP_STATUS"
             echo "详细响应: $BODY"
             exit 1
-          fi
-
-      - name: Verify CDN cache
-        run: |
-          CDN_URL="https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json"
-          echo "验证 CDN 缓存: $CDN_URL"
-          HEADERS=$(curl -sI "$CDN_URL")
-          AGE=$(echo "$HEADERS" | grep -i '^age:' | awk '{print $2}')
-          X_CACHE=$(echo "$HEADERS" | grep -i '^x-cache:' | awk '{print $2}')
-          echo "Age: $AGE"
-          echo "X-Cache: $X_CACHE"
-          if [ -n "$AGE" ] && [ "$AGE" -gt 300 ]; then
-            echo "⚠️ 警告：CDN 缓存 Age 较大 ($AGE 秒)，可能需要更长时间生效"
-          else
-            echo "✅ CDN 缓存状态正常"
           fi
