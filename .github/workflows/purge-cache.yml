@@ -17,10 +17,22 @@ jobs:
   purge:
     runs-on: ubuntu-latest
     steps:
-      - name: Purge jsDelivr cache
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get version from update.json
+        id: get_version
         run: |
-          echo "正在刷新 CDN 缓存: https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json"
-          RESPONSE=$(curl -s -w "\n%{http_code}" -X PURGE https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@main/update.json)
+          VERSION=$(jq -r .version update.json)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "检测到版本: $VERSION"
+
+      - name: Purge jsDelivr cache for current version
+        run: |
+          VERSION=${{ steps.get_version.outputs.version }}
+          PURGE_URL="https://cdn.jsdelivr.net/gh/longyanbo1224/yuweitek-toolbox@v${VERSION}/update.json"
+          echo "正在刷新 CDN 缓存: $PURGE_URL"
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X PURGE "$PURGE_URL")
           HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
           BODY=$(echo "$RESPONSE" | sed '$d')
           echo "HTTP 状态码: $HTTP_STATUS"
