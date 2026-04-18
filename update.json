@@ -1,6 +1,6 @@
 {
     "version": "1.2.4",
-    "min_required": "1.2.3",
+    "min_required": "1.2.4",
     "download_url": "https://github-proxy.teach-english.tech/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.4/YUWEITEK.Agent_1.2.4_Setup.exe",
     "changelog": "1. 激活授权时支持一键粘贴授权码。\n2. 提升视频转换功能的兼容性和稳定性。\n3. 新增备用更新检查方式。"
 }
