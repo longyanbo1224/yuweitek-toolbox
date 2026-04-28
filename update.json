@@ -1,6 +1,6 @@
 {
     "version": "1.2.5",
     "min_required": "1.2.4",
-    "download_url": "https://ghpxy.hwinzniej.top/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.5/YUWEITEK.Agent_1.2.5_Setup.exe",
+    "download_url": "https://gitproxy.mrhjx.cn/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.5/YUWEITEK.Agent_1.2.5_Setup.exe",
     "changelog": "1. 优化重构前端样式。\n2. 提升工具的兼容性和稳定性。\n3. 修复了bug。"
 }
