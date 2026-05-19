@@ -1,6 +1,6 @@
 {
-    "version": "1.2.7",
+    "version": "1.2.8",
     "min_required": "1.2.7",
-    "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.7/YUWEITEK.Agent_1.2.7_Setup.exe",
-    "changelog": "1. 新增云Monitor链接。\n2. 协议解析支持原始日志模式。\n3. 浮动标签滚动隐藏优化。"
+    "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.2.8/YUWEITEK.Agent_1.2.8_Setup.exe",
+    "changelog": "v1.2.7\n1. 新增云Monitor链接。\n2. 协议解析支持原始日志模式。\n3. 浮动标签滚动隐藏优化。\n\nv1.2.8（此版本无需强制更新）\n1.系统托盘支持跳转到指定工具。\n2.修复一些已知的bug。"
 }
