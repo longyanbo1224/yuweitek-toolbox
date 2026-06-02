@@ -1,6 +1,6 @@
 {
     "version": "1.3.1",
-    "min_required": "1.3.1",
+    "min_required": "1.2.7",
     "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.1/YUWEITEK.Agent_1.3.1_Setup.exe",
    "changelog": "v1.3.1\n1. Hex转换新增批量模式，支持上传TXT/CSV/Excel文件批量转换，可拖拽上传并下载结果。\n2. Hex转换新增'补足7位'选项和'复制结果'按钮。\n3. 安装程序支持简体中文界面，安装全过程中文显示。\n4. 更新下载新增可视化操作提示图，引导用户选择下载节点和版本。\n5. 版本更新检查改用GitHub Releases API，更新流程更稳定。\n6. 优化Hex转换进制切换逻辑，交互体验更一致。"
 }
