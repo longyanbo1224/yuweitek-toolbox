@@ -1,6 +1,6 @@
 {
     "version": "1.3.3",
-    "min_required": "1.3.3",
+    "min_required": "1.3.1",
     "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.3/YUWEITEK.Agent_1.3.3_Setup.exe",
     "changelog": "v1.3.3\n1. 当前程序最低支持版本v1.3.1。\n2. 程序启动加载动画。\n3.授权工具新增最后更新时间。",
     "guide_image": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/blob/main/ScreenShot_2026-06-02_092621_414.png"
