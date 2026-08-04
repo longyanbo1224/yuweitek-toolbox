@@ -1,7 +1,7 @@
 {
-    "version": "1.3.4",
+    "version": "1.3.6",
     "min_required": "1.3.1",
-    "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.3/YUWEITEK.Agent_1.3.3_Setup.exe",
-    "changelog": "v1.3.4\n1. 当前程序最低支持版本v1.3.1。\n2. JT808解析工具原始日志模式支持分包",
+    "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.6/YUWEITEK.Agent_1.3.6_Setup.exe",
+    "changelog": "1. 当前程序最低支持版本v1.3.1。\n2. ADB命令调试工具全面重构 - 新增分组Tab标签栏（书页层叠风格，拖拽滚动切换）；执行结果区重构为「状态横幅 + 终端卡片」三层结构；手动命令卡片移至右侧，形成输入→输出垂直流，操作路径更短。\n3. ADB命令调试工具 - Shell模式智能开关（自动添加shell前缀），支持多命令分隔执行（; && 换行符拆分），智能识别adb shell/adb子命令。\n4. ADB命令调试工具 - 多命令换行显示、输出值绿色高亮、返回码标签颜色分离、输入框自适应高度（2行~200px）、日志路径自动补齐反斜杠。\n5. ADB命令调试工具 - 停止日志弹窗统一为自定义模态框、新增清空按钮、Toast提示替代alert()、placeholder精简。\n6. 修复 - 分组名特殊字符（引号）转义、Shell提示状态同步、空分组保留/删除、空指针防护、死代码清理。\n7. JT808解析工具原始日志模式支持多包提取，正则修复（贪婪→非贪婪匹配）。\n8. 新增二维码解析工具（上传/拖拽识别，适配有为设备格式），系统托盘同步入口。",
     "guide_image": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/blob/main/ScreenShot_2026-06-02_092621_414.png"
 }
