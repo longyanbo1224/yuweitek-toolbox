@@ -1,7 +1,7 @@
 {
-    "version": "1.3.7",
-    "min_required": "1.3.1",
-    "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.7/YUWEITEK.Agent_1.3.7_Setup.exe",
-    "changelog": "1. ADB命令调试工具 - 多命令执行失败即停：分号或&&分隔的多条命令，前一条失败立即中断，避免无效操作。\n2. ADB命令调试工具 - 新增执行历史记录：标题栏时钟按钮查看历史列表，悬浮预览摘要，点击查看完整详情并支持一键复制。\n3. ADB命令调试工具 - 执行结果状态横幅新增时间戳显示。\n4. ADB命令调试工具 - 停止日志采集支持重命名，弹窗内可直接修改日志文件名。\n5. 修复 - && 分隔符解析异常，不再被错误拆分为两个单&。\n6. 其他UI细节优化与版本号同步。",
-    "guide_image": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/blob/main/ScreenShot_2026-06-02_092621_414.png"
+    "version": "1.3.8",
+    "min_required": "1.3.8",
+    "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.8/YUWEITEK.Agent_1.3.8_Setup.exe",
+    "changelog": "【v1.3.8】\n1. ADB命令调试工具 - 日志采集关键字过滤：支持分号/逗号分隔多关键字，实时Grep过滤日志输出。\n2. ADB命令调试工具 - 弹窗全面统一：alert/confirm全部替换为自定义模态弹窗与Toast提示。\n3. ADB命令调试工具 - 执行历史持久化：历史记录保存到AppData文件系统，重装不丢失（最多50条）。\n4. ADB命令调试工具 - 管理命令一键复制：hover浮现复制图标，点击自动填入\"名称 - 副本\"，支持智能递增序号。\n5. 修复 - Shell模式下devices/push等ADB子命令被错误添加shell前缀，前后端子命令列表统一。\n6. 修复 - 多命令拆分符单&被误判为分隔符，改为仅&&和分号识别为分隔符。\n7. 修复 - 带-s设备序列号的adb shell命令解析异常。\n8. 其他UI细节优化、执行历史原生Tooltip、打开文件夹窗口前置、版本号同步。\n\n【v1.3.7】\n9. ADB命令调试工具 - 多命令执行失败即停：分号或&&分隔的多条命令，前一条失败立即中断，避免无效操作。\n10. ADB命令调试工具 - 新增执行历史记录：标题栏时钟按钮查看历史列表，悬浮预览摘要，点击查看完整详情并支持一键复制。\n11. ADB命令调试工具 - 执行结果状态横幅新增时间戳显示。\n12. ADB命令调试工具 - 停止日志采集支持重命名，弹窗内可直接修改日志文件名。\n13. 修复 - && 分隔符解析异常，不再被错误拆分为两个单&。\n14. 其他UI细节优化与版本号同步。",
+    "guide_image": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/blob/main/ScreenShot_2026-08-06_092621_414.png"
 }
