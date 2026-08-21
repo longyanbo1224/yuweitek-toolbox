@@ -3,5 +3,5 @@
     "min_required": "1.3.8",
     "download_url": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/releases/download/v1.3.9/YUWEITEK.Agent_1.3.9_Setup.exe",
     "changelog": "【v1.3.9】\n1. 新增远程Monitor数据提取功能，自动解析Text NN:HEXDATA日志中的数据包（兼容7E、2323及纯十六进制），并同步至JT808/JT809/JT1078/JT19056/JT905/主动安全六款解析工具的原始日志模式。\n2. 统一系统托盘、桌面侧边栏及移动端菜单标签，补齐“其他工具(友情链接)”全部入口。\n3. 版本号集中至config管理，打包脚本自动更新installer、config、update.json等5处配置。\n\n【v1.3.8】\n1. ADB命令调试工具新增日志关键字过滤（支持分号/逗号分隔）、自定义模态弹窗、执行历史持久化（AppData保存，最多50条）及管理命令一键复制（自动生成副本名称）。\n2. 修复shell模式下子命令前缀误加、单&分隔符误判、带-s设备序列号解析异常等问题，优化UI细节。\n\n【v1.3.7】\n1. ADB多命令执行失败即停，新增执行历史记录（悬浮预览、详情复制）及结果时间戳显示。\n2. 停止日志采集支持重命名，修复&&分隔符解析错误，优化界面交互。",
-    "guide_image": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/blob/main/ScreenShot_2026-08-06_092621_414.png"
+    "guide_image": "https://gh-proxy.com/https://github.com/longyanbo1224/yuweitek-toolbox/blob/main/ScreenShot_2026-06-02_092621_414.png"
 }
